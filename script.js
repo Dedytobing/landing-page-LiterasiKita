@@ -1,5 +1,22 @@
 // Tambahkan kode JavaScript kalian di file ini
-// Tambahkan kode JavaScript kalian di file ini
+var scrollDownButton = document.querySelector('.scroll-down-button a');
+
+
+scrollDownButton.addEventListener('click', function (event) {
+  event.preventDefault(); 
+  
+
+  var sectionBawah = document.querySelector('.about-content');
+  
+  if (sectionBawah) {
+    
+    window.scrollTo({
+      top: sectionBawah.offsetTop,
+      behavior: 'smooth' 
+    });
+  }
+});
+
 let btnSubmit = document.getElementById("submit-form")
 let warning = document.getElementById("warning")
 
